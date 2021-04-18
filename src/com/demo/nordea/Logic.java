@@ -1,4 +1,4 @@
-package com.kea.juan;
+package com.demo.nordea;
 
 import java.util.Scanner;
 

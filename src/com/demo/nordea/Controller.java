@@ -1,4 +1,4 @@
-package com.kea.juan;
+package com.demo.nordea;
 
 import java.util.Scanner;
 
@@ -10,16 +10,16 @@ public class Controller {
     boolean sentinel = true;
         while (sentinel) { //loop to iterate until the user chooses a command
           switch (Logic.checkMenu()) {
-            case "y": //accept and run program
+            case "y" -> { //accept and run program
               Print.printTriangle(Logic.userInput());
               Print.printMenu();
-              break;
-            case "n": //decline and start again
+            }
+            case "n" -> { //decline and start again
               Print.goodbye();
               Print.printMenu();
-              break;
-            case "q": //quit program
-              sentinel = false;
+            }
+            case "q" -> //quit program
+                sentinel = false;
           }
         }
     }
